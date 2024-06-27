@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./image/56c7e834-b85e-47d1-8901-6828d2ec5dbc.gif);
+    background-position: center;
+}
+
+.container {
+    background-image: url(./image/56c7e834-b85e-47d1-8901-6828d2ec5dbc.gif);
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 700px;
+    box-shadow: 0 0 20px white;
+}
+
+.foto-profil {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+}
+
+.foto-profil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.foto-profil h3 {
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 15px;
+    font-family: cursive;
+}
+
+.foto-profil h2 {
+    color: white;
+    font-size: 1rem;
+    padding-top: 15px;
+    font-family: initial;
+}
+
+.link-link ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-link ul li {
+    width: 80%; 
+    max-width: 40rem;
+    padding: 10px;
+}
+
+.link-link ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 22, 101);
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    margin: 6px 0;
+    padding: 13px;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-shadow: 0 0 5px white;
+}
+
+.link-link ul li a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.link-link ul li a:hover {
+    background: rgba(225, 225, 225, .25);
+    backdrop-filter: blur(3px);
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8787a3;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) { /* tampilan mobile nya */
+    .container {
+        padding: 5px;
+    }
+    .foto-profil h3 {
+        font-size: 0.8rem;
+    }
+    .foto-profil h2 {
+        font-size: 0.6rem;
+    }
+    .link-link ul li a {
+        font-size: 0.6rem;
+        padding: 8px;
+    }
+}
